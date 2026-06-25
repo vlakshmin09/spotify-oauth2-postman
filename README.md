@@ -2,7 +2,7 @@
 
 > Completed as part of the Coursera Guided Project:  
 > **"API Testing a Real Web Application via Postman"** by Saurabh Dhingra  
-> 🏅 [View Certificate]  https://coursera.org/share/329966d3bad203ae1aa7092e69da88f5
+> 🏅 🏅 [View Certificate](https://coursera.org/share/329966d3bad203ae1aa7092e69da88f5)
  
 
 ---
@@ -221,7 +221,8 @@ spotify-oauth2-postman/
 
 Completed: **API Testing a Real Web Application via Postman**  
 Platform: Coursera | Instructor: Saurabh Dhingra  
-🔗 [View Certificate] https://coursera.org/share/329966d3bad203ae1aa7092e69da88f5
+🔗 [View Certificate](https://coursera.org/share/329966d3bad203ae1aa7092e69da88f5)
+
 
 ---
 
