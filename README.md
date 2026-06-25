@@ -147,16 +147,12 @@ pm.test("Playlist ID is returned", function () {
 |------|-----------|
 | Spotify Developer Dashboard | `screenshots/01-spotify-dashboard.png` |
 | GET Authorize Request (Postman) | `screenshots/02-get-authorize-params.png` |
-| Spotify Consent Page | `screenshots/03-spotify-consent-page.png` |
-| Auth Code in Browser URL | `screenshots/04-auth-code-url.png` |
-| POST Token Exchange | `screenshots/05-post-token-request.png` |
-| Access Token Response | `screenshots/06-access-token-response.png` |
-| GET /v1/me — User Profile | `screenshots/07-get-profile-response.png` |
-| POST — Create Playlist | `screenshots/08-create-playlist.png` |
-| PUT — Modify Playlist | `screenshots/09-modify-playlist.png` |
-| Assertions Passing | `screenshots/10-assertions-passing.png` |
-| Refresh Token | `screenshots/11-refresh-token.png` |
-
+| Auth Code in Browser URL | `screenshots/03-auth-code-url.png` |
+| POST Token Exchange | `screenshots/04-post-token-request-response.png` |
+| GET /v1/me — User Profile | `screenshots/05-get-profile-response.png` |
+| POST — Create Playlist | `screenshots/06-create-playlist.png` |
+| PUT — Modify Playlist | `screenshots/07-modify-playlist.png` |
+ 
 ---
 
 ## 🛠️ Tools Used
