@@ -184,8 +184,8 @@ This real-world troubleshooting experience demonstrates the importance of stayin
 ```
 spotify-oauth2-postman/
 ├── README.md
-├── spotify.postman_collection.json    ← Import this into Postman
-├── spotify.postman_environment.json   ← Environment variables
+├── spotify.postman_collection.json   
+├── spotify.postman_environment.json  
 └── screenshots/
     ├── 01-spotify-dashboard.png
     ├── 02-get-authorize-params.png
@@ -194,7 +194,7 @@ spotify-oauth2-postman/
     ├── 05-get-profile-response.png
     ├── 06-create-playlist.png
     ├── 07-modify-playlist.png
-    
+
 ```
 
 ---
