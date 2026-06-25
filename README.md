@@ -189,15 +189,12 @@ spotify-oauth2-postman/
 └── screenshots/
     ├── 01-spotify-dashboard.png
     ├── 02-get-authorize-params.png
-    ├── 03-spotify-consent-page.png
-    ├── 04-auth-code-url.png
-    ├── 05-post-token-request.png
-    ├── 06-access-token-response.png
-    ├── 07-get-profile-response.png
-    ├── 08-create-playlist.png
-    ├── 09-modify-playlist.png
-    ├── 10-assertions-passing.png
-    └── 11-refresh-token.png
+    ├── 03-auth-code-url.png
+    ├── 04-post-token-request-response.png
+    ├── 05-get-profile-response.png
+    ├── 06-create-playlist.png
+    ├── 07-modify-playlist.png
+    
 ```
 
 ---
