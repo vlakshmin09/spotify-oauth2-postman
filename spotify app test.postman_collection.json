@@ -1,0 +1,373 @@
+{
+  "info": {
+    "_postman_id": "50ce0996-5d67-4fae-9033-5168e8a36e93",
+    "name": "spotify app test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53719159",
+    "_collection_link": "https://go.postman.co/collection/53719159-50ce0996-5d67-4fae-9033-5168e8a36e93?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get_access_grant",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Post Access Tocken",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": [
+            {
+              "key": "state",
+              "value": "user-read-private user-read-email",
+              "type": "string"
+            },
+            {
+              "key": "scope",
+              "value": "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public",
+              "type": "string"
+            },
+            {
+              "key": "clientSecret",
+              "value": "{{auth_secret_0gs0}}",
+              "type": "string"
+            },
+            {
+              "key": "clientId",
+              "value": "{{auth_secret_13ug}}",
+              "type": "string"
+            },
+            {
+              "key": "accessTokenUrl",
+              "value": "https://accounts.spotify.com/api/token",
+              "type": "string"
+            },
+            {
+              "key": "authUrl",
+              "value": "https://accounts.spotify.com/authorize",
+              "type": "string"
+            },
+            {
+              "key": "addTokenTo",
+              "value": "header",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "client_id",
+              "type": "text",
+              "uuid": "f8e4bcae-56ed-4f96-9d83-e9bc1404e8a9",
+              "value": "{{auth_secret_13ug}}"
+            },
+            {
+              "key": "client_secret",
+              "type": "text",
+              "uuid": "434266b7-1f6e-43ec-a1c8-8e3ae51330cc",
+              "value": "{{auth_secret_0gs0}}"
+            },
+            {
+              "key": "grant_type",
+              "type": "text",
+              "uuid": "529a2d70-3504-475e-bb29-d91e912b277e",
+              "value": "authorization_code"
+            },
+            {
+              "key": "code",
+              "type": "text",
+              "uuid": "fbb3ce7e-7a4c-4736-89dc-b1ba32ddcf25",
+              "value": "AQDvUIvc63tR6k4NWu1SDnf3vFJpYRrfsXHGfBA_5GqEzSXKBXusWCbW7HaUxX0cSEOH7vMws01jfSbpnp3cGsQvK07I7OsQbiXuo3q-fqRpSZDT_v9EzcvR8hLyYNb6cU9kiH7ArxAJQlgVcnZBM41lkKwRC7kUEEABGC9OW11xcr8JybV1TnItRBtJiC3mesMwZV1uPa9fcJRiYqVwuqXP_BUfJeNhVEhAbsqYOBLMb0vCUVdqhe-BFS_iSUjBqPzOYuTX8fPKeD0_vL7fab_vOqgvTcFDnUUTKKNjGa5xstFmKJE2cg"
+            },
+            {
+              "key": "redirect_uri",
+              "type": "text",
+              "uuid": "cb2fdd52-2196-4bda-b5ba-0b164d8d6fc9",
+              "value": "https://127.0.0.1:8888/callback"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://accounts.spotify.com/api/token",
+          "protocol": "https",
+          "host": [
+            "accounts",
+            "spotify",
+            "com"
+          ],
+          "path": [
+            "api",
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Refresh Tocken",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": [
+            {
+              "key": "state",
+              "value": "user-read-private user-read-email",
+              "type": "string"
+            },
+            {
+              "key": "scope",
+              "value": "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public",
+              "type": "string"
+            },
+            {
+              "key": "clientSecret",
+              "value": "{{auth_secret_0gs0}}",
+              "type": "string"
+            },
+            {
+              "key": "clientId",
+              "value": "{{auth_secret_13ug}}",
+              "type": "string"
+            },
+            {
+              "key": "accessTokenUrl",
+              "value": "https://accounts.spotify.com/api/token",
+              "type": "string"
+            },
+            {
+              "key": "authUrl",
+              "value": "https://accounts.spotify.com/authorize",
+              "type": "string"
+            },
+            {
+              "key": "addTokenTo",
+              "value": "header",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "client_id",
+              "type": "text",
+              "uuid": "f8e4bcae-56ed-4f96-9d83-e9bc1404e8a9",
+              "value": "{{auth_secret_13ug}}"
+            },
+            {
+              "key": "client_secret",
+              "type": "text",
+              "uuid": "434266b7-1f6e-43ec-a1c8-8e3ae51330cc",
+              "value": "{{auth_secret_0gs0}}"
+            },
+            {
+              "key": "grant_type",
+              "type": "text",
+              "uuid": "529a2d70-3504-475e-bb29-d91e912b277e",
+              "value": "authorization_code"
+            },
+            {
+              "key": "code",
+              "type": "text",
+              "uuid": "fbb3ce7e-7a4c-4736-89dc-b1ba32ddcf25",
+              "value": "AQDvUIvc63tR6k4NWu1SDnf3vFJpYRrfsXHGfBA_5GqEzSXKBXusWCbW7HaUxX0cSEOH7vMws01jfSbpnp3cGsQvK07I7OsQbiXuo3q-fqRpSZDT_v9EzcvR8hLyYNb6cU9kiH7ArxAJQlgVcnZBM41lkKwRC7kUEEABGC9OW11xcr8JybV1TnItRBtJiC3mesMwZV1uPa9fcJRiYqVwuqXP_BUfJeNhVEhAbsqYOBLMb0vCUVdqhe-BFS_iSUjBqPzOYuTX8fPKeD0_vL7fab_vOqgvTcFDnUUTKKNjGa5xstFmKJE2cg"
+            },
+            {
+              "key": "redirect_uri",
+              "type": "text",
+              "uuid": "cb2fdd52-2196-4bda-b5ba-0b164d8d6fc9",
+              "value": "https://127.0.0.1:8888/callback"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://accounts.spotify.com/api/token",
+          "protocol": "https",
+          "host": [
+            "accounts",
+            "spotify",
+            "com"
+          ],
+          "path": [
+            "api",
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create_play_list",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_02bt}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Lakki playlist\",\r\n    \"public\": false,\r\n    \"description\": \"New playlist description\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.spotify.com/v1/me/playlists",
+          "protocol": "https",
+          "host": [
+            "api",
+            "spotify",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "me",
+            "playlists"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get_user_id",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Get playlist",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "update playlist",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0pr7}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\"= \"My Fav Playlist\"\r\n    \"public\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.spotify.com/v1/playlists/16G5kGfSXjT0KDpV4EAFUn/items",
+          "protocol": "https",
+          "host": [
+            "api",
+            "spotify",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "playlists",
+            "16G5kGfSXjT0KDpV4EAFUn",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put update palaylist2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0r5g}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Updated Lakki Playlist\",\r\n    \"public\":true\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.spotify.com/v1/playlists/16G5kGfSXjT0KDpV4EAFUn",
+          "protocol": "https",
+          "host": [
+            "api",
+            "spotify",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "playlists",
+            "16G5kGfSXjT0KDpV4EAFUn"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_secret_02bt",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0pr7",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_13ug",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0gs0",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0r5g",
+      "secret": true
+    }
+  ]
+}
