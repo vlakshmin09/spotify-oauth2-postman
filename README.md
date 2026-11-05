@@ -48,7 +48,7 @@ User → GET /authorize → Auth Code → POST /api/token → Access Token → S
 ---
 
 ### 3️⃣ Modify Playlist (PUT)
-- Endpoint: `PUT https://api.spotify.com/v1/me/playlists`
+- PUT https://api.spotify.com/v1/playlists/{playlist_id}
 - Auth: Bearer token in header
 - Body:
 ```json
