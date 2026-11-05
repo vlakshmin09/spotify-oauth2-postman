@@ -58,7 +58,10 @@ User → GET /authorize → Auth Code → POST /api/token → Access Token → S
   "public": true
 }
 ```
-- Validated: `200 OK` status, updated values reflected in response
+- - Validated: `200 OK` status.
+- Follow-up validation: Send a GET request to
+  `https://api.spotify.com/v1/playlists/{playlist_id}`
+  to verify the updated name, description and visibility.
 - Scope required: `playlist-modify-public`
 
 ---
